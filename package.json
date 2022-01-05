@@ -26,7 +26,7 @@
     "deploy-stack:local": "npm run prepare:all && npm run subgraph:local",
     "deploy-stack:local:scenario": "npm run submodule:deploy:scenario && npm run update-abi-addresses && npm run prepare:subgraph && npm run subgraph:local",
     "deploy-stack:local:post-scenario": "npm run update-abi-addresses && npm run prepare:subgraph && npm run subgraph:deploy:local",
-    "deploy:hosted:kovan": "BLOCKCHAIN=ethereum NETWORK=kovan env-cmd npm run prepare:subgraph && SLUG=cardanopadtech/aave-test env-cmd npm run subgraph:deploy:hosted",
+    "deploy:hosted:kovan": "BLOCKCHAIN=ethereum NETWORK=kovan env-cmd npm run prepare:subgraph && SLUG=cardanopadtech/aavetest env-cmd npm run subgraph:deploy:hosted",
     "deploy:hosted:mainnet": "BLOCKCHAIN=ethereum NETWORK=mainnet env-cmd npm run prepare:subgraph && SLUG=aave/protocol-v2 env-cmd npm run subgraph:deploy:hosted",
     "deploy:hosted:matic": "BLOCKCHAIN=matic NETWORK=matic env-cmd npm run prepare:subgraph && SLUG=aave/aave-v2-matic env-cmd npm run subgraph:deploy:hosted",
     "deploy:hosted:mumbai": "BLOCKCHAIN=matic NETWORK=mumbai env-cmd npm run prepare:subgraph && SLUG=aave/aave-v2-polygon-mumbai env-cmd npm run subgraph:deploy:hosted",
